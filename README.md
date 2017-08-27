@@ -1,7 +1,5 @@
 <div align="center">
-
-![ScrollObserve](https://cdn.rawgit.com/josephrexme/scrollobserve/d425de96/scrollobserve.svg)
-
+  <img src="https://cdn.rawgit.com/josephrexme/scrollobserve/d425de96/scrollobserve.svg" alt="Scrollobserve" width="300">
 </div>
 
 ScrollObserve is a plugin for animating and applying styles to elements on scroll.
