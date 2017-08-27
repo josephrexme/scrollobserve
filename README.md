@@ -1,6 +1,6 @@
 <div align="center" style="margin-bottom: 40px">
 
-  <img src="https://cdn.rawgit.com/josephrexme/scrollobserve/d425de96/scrollobserve.svg" alt="Scrollobserve" width="300">
+  <img src="https://cdn.rawgit.com/josephrexme/scrollobserve/bdf90eac/scrollobserve.svg" alt="Scrollobserve" width="300">
 
 </div>
 
