@@ -1,13 +1,19 @@
-<div align="center">
+<div align="center" style="margin-bottom: 40px">
   <img src="https://cdn.rawgit.com/josephrexme/scrollobserve/d425de96/scrollobserve.svg" alt="Scrollobserve" width="300">
 </div>
 
-ScrollObserve is a plugin for animating and applying styles to elements on scroll.
+ScrollObserve is a plugin for animating and applying styles to elements on scroll. It is similar to the [intersection observer](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API) in implementation with great performance and small filesize at 1.8kb.
 
 ## Installation
+NPM,
 
 ```bash
 npm install scrollobserve
+```
+CDN,
+
+```html
+<script src="https://unpkg.com/scrollobserve/dist/scrollobserve.min.js"></script>
 ```
 
 ## Basic Usage
@@ -62,10 +68,32 @@ scrollobserve({ reverse: false });
 ```
 
 #### inViewClass
+Custom class to handle animation in CSS when element intersects viewport
 #### offViewClass
+Custom class to handle animation in CSS when element is out of viewport. This is usually not needed when `reverse` is set to true as it goes back to initial state of the `scrolltrigger` class.
 #### offset
+Determines the offset of the observed element from viewport intersection before styles and animations are applied. Defaults to 0.
 #### ignoreTransform
+When set to false it uses `getBoundingClientRect()` to get precise location of the element to the top of the viewport. When true, it ignore existing transforms like a `translate` on the element to get the initial position of the element in the window. Defaults to true.
 
+## Methods
+#### destroy
+Revokes the `scrollobserve()` function in program execution
+```js
+const scrollobserve = scrollobserve();
+
+scrollobserve.destroy();
+```
+#### observables
+Returns an array of all the elements on the page that are being observed by `scrollobserve`.
+```js
+scrollobserve.observables();
+```
+### config
+Returns the current config being used which is an addition of custom options and existing defaults when not overriden.
+```js
+scrollobserve.config();
+```
 
 ## License
 Licensed under MIT License, Copyright © Joseph Rex
