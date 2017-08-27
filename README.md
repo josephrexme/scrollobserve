@@ -91,7 +91,7 @@ Returns an array of all the elements on the page that are being observed by `scr
 ```js
 scrollobserve.observables();
 ```
-### config
+#### config
 Returns the current config being used which is an addition of custom options and existing defaults when not overriden.
 ```js
 scrollobserve.config();
