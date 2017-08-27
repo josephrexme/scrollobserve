@@ -42,7 +42,7 @@ To set behavior for your element when scrolled into and out you could use the de
 
 ```css
 .scrollobserve{
-  transition: 1s background transform;
+  transition: 1s background transform ease;
   background: rebeccapurple;
 }
 .so-in{
