@@ -1,0 +1,31 @@
+{
+  "name": "scrollobserve",
+  "version": "0.0.1",
+  "description": "Observe elements and add CSS animations",
+  "main": "dist/scrollobserve.min.js",
+  "scripts": {
+    "build": "babel --presets babel-preset-env src/scrollobserve.js -o dist/scrollobserve.js",
+    "minified": "babel --minified --presets babel-preset-env src/scrollobserve.js -o dist/scrollobserve.min.js",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josephrexme/scrollobserve.git"
+  },
+  "keywords": [
+    "javascript",
+    "scroll",
+    "animation",
+    "component"
+  ],
+  "author": "Joseph Rex",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/josephrexme/scrollobserve/issues"
+  },
+  "homepage": "https://github.com/josephrexme/scrollobserve#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.0"
+  }
+}
