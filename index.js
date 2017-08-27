@@ -1,4 +1,3 @@
-var scrollobserve = (function () {
 'use strict';
 
 var on = window.addEventListener;
@@ -92,6 +91,4 @@ var scrollobserve = function scrollobserve() {
   };
 };
 
-return scrollobserve;
-
-}());
+module.exports = scrollobserve;

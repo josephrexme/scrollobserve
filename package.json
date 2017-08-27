@@ -2,10 +2,11 @@
   "name": "scrollobserve",
   "version": "0.0.1",
   "description": "Observe elements and add CSS animations",
-  "main": "dist/scrollobserve.min.js",
+  "main": "index.js",
   "scripts": {
-    "build": "babel --presets babel-preset-env src/scrollobserve.js -o dist/scrollobserve.js",
-    "minified": "babel --minified --presets babel-preset-env src/scrollobserve.js -o dist/scrollobserve.min.js",
+    "build": "rollup src/scrollobserve.js -o dist/scrollobserve.js -f iife -n scrollobserve -c config.js",
+    "minify": "uglify -s dist/scrollobserve.js -o dist/scrollobserve.min.js",
+    "package": "rollup src/scrollobserve.js -o index.js -f cjs -c config.js",
     "test": "mocha"
   },
   "repository": {
@@ -26,6 +27,9 @@
   "homepage": "https://github.com/josephrexme/scrollobserve#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.6.0"
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-env": "^1.6.0",
+    "rollup-plugin-babel": "^3.0.2",
+    "rollup-plugin-node-resolve": "^3.0.0"
   }
 }
