@@ -1,6 +1,6 @@
 <div align="center">
 
-![ScrollObserve]()
+![ScrollObserve](https://cdn.rawgit.com/josephrexme/scrollobserve/d425de96/scrollobserve.svg)
 
 </div>
 
@@ -53,7 +53,7 @@ Custom classes can also be used:
 scrollobserve({ inViewClass: 'myInclass', offViewClass: 'myOutClass' }, '.scrolltrigger');
 ```
 
-### Options
+## Options
 
 #### reverse
 This determines the behavior when scrolling to bottom and when scrolling back to top of a page. If set to `true` animations are applied both ways (this is the default), if set to `false` animations only happen on initial scroll to bottom.
