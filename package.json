@@ -1,6 +1,6 @@
 {
   "name": "scrollobserve",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Observe elements and add CSS animations",
   "main": "index.js",
   "scripts": {
