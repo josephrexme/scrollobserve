@@ -1,5 +1,7 @@
 <div align="center" style="margin-bottom: 40px">
+
   <img src="https://cdn.rawgit.com/josephrexme/scrollobserve/d425de96/scrollobserve.svg" alt="Scrollobserve" width="300">
+
 </div>
 
 ScrollObserve is a plugin for animating and applying styles to elements on scroll. It is similar to the [intersection observer](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API) in implementation with great performance and small filesize at 1.8kb.
