@@ -26,8 +26,7 @@ var scrollobserve = function scrollobserve() {
       var thisEl = el;
       var rect = {};
       if (config.ignoreTransform) {
-        var offsetTop = 0,
-            offsetLeft = 0;
+        var offsetTop = 0;
 
         var offsetHeight = el.offsetHeight;
         while (el) {

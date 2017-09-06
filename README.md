@@ -4,7 +4,7 @@
 
 </div>
 
-ScrollObserve is a plugin for animating and applying styles to elements on scroll. It is similar to the [intersection observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API) in implementation with great performance and small filesize at 1.8kb.
+ScrollObserve is a plugin for animating and applying styles to elements on scroll. It is similar to the [intersection observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API) in implementation with great performance and small filesize less than 1kb when minified and gzipped.
 
 ## Installation
 NPM,
